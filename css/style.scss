@@ -1,0 +1,240 @@
+*,
+*:focus,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+}
+.width{
+    width: 90%;
+    padding: 3%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex img{
+    width: 100%;
+}
+.tryButton{
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 55px;
+    box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    cursor: pointer;   
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    grid-column-gap: 12px;
+}
+.grid h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+}
+.grid p{
+    font-size: 0.9em;
+    width: 79%;
+}
+.grid img{
+    width: 100%;
+}
+.button {
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(322, 100%, 66%);
+    padding: 15px 55px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.3);
+}
+.sub-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.box{
+    box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+
+    img{
+        width: 100%;
+    }
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#boxx{
+    padding-left: 0;
+}
+#flex-reverse{
+    flex-direction: row-reverse;
+     div{
+         margin-left: 10%;
+     }
+}
+.flex2 h2{
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(192, 100%, 9%);
+}
+.flex2 p{
+    width: 80%;
+    color: hsl(208, 11%, 55%);
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+#ready{
+    padding: 0;
+    padding: 4%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    background-color: white;
+    box-shadow: 0px 9px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    padding-top: 10%;
+    margin-top: -6%;
+    padding-bottom: 3%;
+}
+.footer #last{
+    color: white;
+    text-align: right;
+    font-size: 0.8em;
+    // margin-top: 4%;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 15%;
+    justify-content: space-evenly;
+    grid-gap: 2%;
+    color: white;
+}
+.grid3 a{
+    text-decoration: none;
+    color: white;
+}
+.internalGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5%;
+}
+.social a {
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+.social a i {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+  
+.social a:hover {
+    color: hsl(192, 100%, 9%);
+    background-color: white;
+    border: none;
+}
+
+
+@media only screen and (max-width: 700px){
+    .container{
+        background-image: url(../images/bg-hero-mobile.svg);
+        background-color: hsl(193, 100%, 96%);
+    }
+    .width{
+        width: 95%;
+    }
+    .flex img{
+        width: 50%;
+    }
+    .tryButton{
+        padding: 0;
+        padding: 5px 15px;
+    }
+    .grid{
+        grid-template-columns: 90%;
+        grid-column-gap: 0;
+        justify-content: space-evenly;
+
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            width: 100%;
+        }
+        img{
+            margin-top: 20px;
+        }
+    }
+    .sub-container{
+        width: 90%;
+    }
+    .box{
+        padding-left: 0;
+        padding: 2%;
+    }
+    .flex2{
+        flex-direction: column-reverse;  
+    }
+    .flex2 .div{
+        margin-top: -22%;
+        margin-bottom: 10%;
+    }
+    #flex-reverse{
+        flex-direction: column-reverse;
+         div{
+            margin-left: 0;
+        }
+    }
+    .flex2 h2{
+        text-align: center;
+    }
+    .flex2 p{
+        width: 100%;
+        text-align: center;
+    }
+    #ready{
+        width: 90%;
+    }
+    #last{
+        text-align: center;
+    }
+    .grid3{
+        grid-template-columns: 90%;
+    }
+    .margin{
+        margin-top: 25%;
+    }
+}
